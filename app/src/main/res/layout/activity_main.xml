@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/checkBoxThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:id="@+id/checkBoxTwo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/checkBoxThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/checkBoxTwo"
+        android:id="@+id/checkBoxOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/pikachu"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/checkBoxThree"
+        android:id="@+id/seekBarThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/pokemon2"
+        android:id="@+id/seekBarTwo"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/checkBoxTwo"
+        android:layout_above="@+id/seekBarThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/pokemon3"
+        android:id="@+id/seekBarOne"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@id/seekBarTwo"
+        android:layout_toRightOf="@id/checkBoxOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/background"
+        android:layout_width="150dp"
+        android:layout_height="120dp" />
+    <TextView
+        android:id="@+id/score"
+        android:layout_margin="10dp"
+        android:textColor="#ff00"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:text="100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/playbtn"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:src="@drawable/playgame"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+</RelativeLayout>
